@@ -18,9 +18,10 @@ body{
     left: 0;
     right: 0;
     justify-content: space-between;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(193, 195, 197) 0px 20px 30px -10px;
+    background-color: rgb(241, 241, 245);
     align-items: center;
-    z-index: 20;
+   
 
 }
 .logo{
