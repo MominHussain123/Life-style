@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+body{
+    background-color: rgb(244, 244, 247);
+}
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    align-items: center;
+    z-index: 20;
+
+}
+.logo{
+     font-size: 20px;
+     color: aqua;
+
+}
+.navbar a{
+    color: rgb(196, 192, 192);
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+
+    
+}
+.navbar a:hover{
+    color: black;
+    
+}
+.navbar .highlight{
+    color: black;
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+.contant{
+    height: 100px;
+    width: 400px;
+    padding-top: 100px;
+}
+    
+
+.container{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+    gap: 20px;
+}
+.box{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;;
+}
+button{
+    padding: 5px 10px ;
+}
+#box1{
+    grid-column:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./images.jpeg);
+}
+#box1 button{
+  margin-top: 50px;
+}
+
+#box3{
+    grid-row:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./glass-modern-building-with-blue-sky-background-view-architecture-details-urban-abstract_991208-119.avif  );
+}
+#box3 button{
+    margin-top: 180px;
+}
+#box4{
+    grid-row:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./desktop-wallpaper-best-flowers-iphone-background-flower-iphone-amazing-flowers-iphone-flower-pot-thumbnail.jpg);
+}
+#box4 button{
+    margin-top: 180px;
+}
+#box2{
+    grid-row:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./premium_photo-1672574474203-19e61904670f.avif);
+}
+#box2 button{
+    margin-top: 220px;
+}
+#box5{
+    grid-row:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./beautiful-female-hands-showing-fresh-cute-manicure-skin-nail-care-concept-purple-wall_120523-1935.avif);
+}
+#box5 button{
+    margin-top: 255px;
+}
+#box6{
+    grid-column:span 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(./c200a1651248dd34a49a239edb224423.jpg) ;
+}
+#box6 button{
+    margin-top: 50px;
+  }
+@media (max-width:899px){
+    .container{
+        grid-template-columns: repeat(3,200px);
+    }
+    .navbar{
+        position: absolute;
+        top: -999px;
+    }
+}
+@media (max-width:646px){
+    .container{
+        grid-template-columns: repeat(2,200px);
+    }
+    
+    .contant1,
+    .contant2{
+        display: none;
+    }
+}
+
+        @media (max-width:457px){
+            .container{
+                grid-template-columns: repeat(1,230px);
+               
+            }
+            #box1{
+                grid-column: span 1;
+                grid-row: span 2;
+                background-image: url(./image\ -ali.jpeg);
+            }
+            #box1 button{
+                margin-top: 230px;
+              
+            }
+            #box6{
+                grid-column: span 1;
+                height: 400px;
+            }
+            #box6 button{
+                margin-top: 200px;
+              
+            }
+            .contant{
+                width: 230px;
+            }
+            .header{
+                padding: 0px 10px;
+            }
+           
+        }
